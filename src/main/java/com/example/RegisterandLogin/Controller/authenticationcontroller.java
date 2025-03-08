@@ -148,7 +148,8 @@ public class authenticationcontroller {
 
     public static String generateAccountNumber() {
         String uuid = UUID.randomUUID().toString().replaceAll("[^0-9]", "");
-        System.out.println(uuid);// Keep only digits
+        System.out.println(uuid);
+        System.out.println("vamshi");// Keep only digits
         return uuid.substring(0, 10);
     }
 }
